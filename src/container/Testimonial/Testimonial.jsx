@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Testimonial.scss';
+import testimonialJson from "../../json_files/testimonials.json";
+import clientJson from "../../json_files/clients.json"
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,33 +18,34 @@ const Testimonial = () => {
   };
 
   useEffect(() => {
-    const query = '*[_type == "testimonials"]';
-    const brandsQuery = '*[_type == "brands"]';
 
-    client.fetch(query).then((data) => {
-      setTestimonials(data);
-        // // download data as json file
-        // const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
-        // const downloadAnchorNode = document.createElement('a');
-        // downloadAnchorNode.setAttribute("href",     dataStr);
-        // downloadAnchorNode.setAttribute("download", "testimonials.json");
-        // document.body.appendChild(downloadAnchorNode); // required for firefox
-        // downloadAnchorNode.click();
-        // downloadAnchorNode.remove();
-    });
+    setTestimonials(testimonialJson)
+    setBrands(clientJson)
 
-    client.fetch(brandsQuery).then((data) => {
-      setBrands(data);
+    // const query = '*[_type == "testimonials"]';
+    // const brandsQuery = '*[_type == "brands"]';
+
+    // client.fetch(query).then((data) => {
+    //   setTestimonials(data);
       
-    });
+    // });
+
+    // client.fetch(brandsQuery).then((data) => {
+    //   setBrands(data);
+      
+    // });
   }, []);
 
   return (
     <>
+    <h2 className="head-text">What <span>Client</span> say's about us</h2>
       {testimonials.length && (
         <>
+        <div className='flex flex-col w-full justify-center items-center pt-[20px]'>
           <div className="app__testimonial-item app__flex">
+            <div className='flex flex-col h-full justify-start items-start mt-[20px]'>
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
+            </div>
             <div className="app__testimonial-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
@@ -52,7 +55,8 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="app__testimonial-btns app__flex">
+        <div className='flex flex-row w-[60%] justify-end'>
+          <div className=" app__testimonial-btns app__flex">
             <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
               <HiChevronLeft />
             </div>
@@ -61,17 +65,21 @@ const Testimonial = () => {
               <HiChevronRight />
             </div>
           </div>
+          </div>
+          </div>
         </>
       )}
 
-      <div className="app__testimonial-brands app__flex">
+      <div className="app__testimonial-brands app__flex cursor-pointer">
         {brands.map((brand) => (
           <motion.div
             whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 0.5, type: 'tween' }}
-            key={brand._id}
+            key={brand?._id}
           >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+            <img src={brand.image} alt={brand.title} onClick={() => {
+              window.open(brand.link, '_blank');
+            }} />
           </motion.div>
         ))}
       </div>
