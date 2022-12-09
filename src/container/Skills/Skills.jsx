@@ -16,10 +16,12 @@ const Skills = () => {
 
     client.fetch(query).then((data) => {
       setExperiences(data);
+     
     });
 
     client.fetch(skillsQuery).then((data) => {
       setSkills(data);
+      
     });
   }, []);
 

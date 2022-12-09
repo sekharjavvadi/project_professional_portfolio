@@ -1,0 +1,66 @@
+[
+  {
+    "_createdAt": "2022-02-02T03:53:40Z",
+    "_id": "24e26c55-bb85-4cd7-b3d7-ca464676b321",
+    "_rev": "aqM1z4uXkIQ2WQ9uDbzydB",
+    "_type": "abouts",
+    "_updatedAt": "2022-02-02T03:53:40Z",
+    "description": "I am a web designer with a passion for creating beautiful and functional web applications.",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-b62651ef34a9e54c354ee437545acc348fbf0505-1200x900-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Web Designer"
+  },
+  {
+    "_createdAt": "2022-02-02T03:54:09Z",
+    "_id": "5497ca81-6970-49f9-b579-13a216738ace",
+    "_rev": "aqM1z4uXkIQ2WQ9uDc0CF9",
+    "_type": "abouts",
+    "_updatedAt": "2022-02-02T03:54:09Z",
+    "description": "I am a React Native developer with a passion for building beautiful and functional mobile applications.",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-65ed72deac647aa84f75c5af8f6284ab926931b0-1200x900-png",
+        "_type": "reference"
+      }
+    },
+    "title": "React Native Developer"
+  },
+  {
+    "_createdAt": "2022-02-02T03:54:33Z",
+    "_id": "6e6868c3-281c-475f-b355-962dca23f9c9",
+    "_rev": "aqM1z4uXkIQ2WQ9uDc0RHg",
+    "_type": "abouts",
+    "_updatedAt": "2022-02-02T03:54:33Z",
+    "description": "I am a backend developer with a passion for building beautiful and functional web applications.",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-90d71de50f2c6659156500e7a4d76a618e1fcd63-1200x900-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Backend Developer"
+  },
+  {
+    "_createdAt": "2022-02-02T03:53:05Z",
+    "_id": "cba216ba-db11-4680-bf65-a0d572841270",
+    "_rev": "MPbpsQdoxvSweYYnp7R9Lq",
+    "_type": "abouts",
+    "_updatedAt": "2022-02-02T03:53:05Z",
+    "description": "I am a frontend developer with a passion for building beautiful and functional web applications.",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Frontend Developer"
+  }
+]
