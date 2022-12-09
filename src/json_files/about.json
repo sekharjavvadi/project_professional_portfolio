@@ -1,5 +1,21 @@
 [
   {
+    "_createdAt": "2022-02-02T03:53:05Z",
+    "_id": "cba216ba-db11-4680-bf65-a0d572841270",
+    "_rev": "MPbpsQdoxvSweYYnp7R9Lq",
+    "_type": "abouts",
+    "_updatedAt": "2022-02-02T03:53:05Z",
+    "description": "I am a frontend developer with a passion for building beautiful and functional web applications.",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
+        "_type": "reference"
+      }
+    },
+    "title": "UI/UX Design"
+  },
+  {
     "_createdAt": "2022-02-02T03:53:40Z",
     "_id": "24e26c55-bb85-4cd7-b3d7-ca464676b321",
     "_rev": "aqM1z4uXkIQ2WQ9uDbzydB",
@@ -13,7 +29,7 @@
         "_type": "reference"
       }
     },
-    "title": "Web Designer"
+    "title": "Blockchain Services"
   },
   {
     "_createdAt": "2022-02-02T03:54:09Z",
@@ -29,7 +45,7 @@
         "_type": "reference"
       }
     },
-    "title": "React Native Developer"
+    "title": "Android & IOS"
   },
   {
     "_createdAt": "2022-02-02T03:54:33Z",
@@ -45,22 +61,7 @@
         "_type": "reference"
       }
     },
-    "title": "Backend Developer"
-  },
-  {
-    "_createdAt": "2022-02-02T03:53:05Z",
-    "_id": "cba216ba-db11-4680-bf65-a0d572841270",
-    "_rev": "MPbpsQdoxvSweYYnp7R9Lq",
-    "_type": "abouts",
-    "_updatedAt": "2022-02-02T03:53:05Z",
-    "description": "I am a frontend developer with a passion for building beautiful and functional web applications.",
-    "imgUrl": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
-        "_type": "reference"
-      }
-    },
-    "title": "Frontend Developer"
+    "title": "Web & Desktop Apps"
   }
+ 
 ]

@@ -1,4 +1,37 @@
-[
+[  
+  {
+  "_createdAt": "2022-02-02T06:32:07Z",
+  "_id": "b90fdb1c-6dd9-430c-84c6-a171639226e3",
+  "_rev": "PtDtQjdJbHP45gYivUCQjA",
+  "_type": "skills",
+  "_updatedAt": "2022-02-03T08:49:15Z",
+  "bgColor": "#fcece7",
+  "icon": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-150681c99b6a34ff849fdf59341c0e7af7b6dcd2-64x64-png",
+      "_type": "reference"
+    }
+  },
+  "name": "Figma"
+},
+{
+  "_createdAt": "2022-02-02T06:32:07Z",
+  "_id": "b90fdb1c-6dd9-430c-84c6-a171639226e3",
+  "_rev": "PtDtQjdJbHP45gYivUCQjA",
+  "_type": "skills",
+  "_updatedAt": "2022-02-03T08:49:15Z",
+  "bgColor": "#fcece7",
+  "icon": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-150681c99b6a34ff849fdf59341c0e7af7b6dcd2-64x64-png",
+      "_type": "reference"
+    }
+  },
+  "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png",
+  "name": "Adobe XD"
+},
   {
     "_createdAt": "2022-02-02T06:30:27Z",
     "_id": "0ae8c884-1ec3-429f-b1ae-431ac7073876",
@@ -15,67 +48,24 @@
     "name": "Flutter"
   },
   {
-    "_createdAt": "2022-02-02T06:34:44Z",
-    "_id": "0c22f91a-7345-4c8a-8d38-5c7674091e2d",
-    "_rev": "aqM1z4uXkIQ2WQ9uDdL9Hs",
+    "_createdAt": "2022-02-02T06:32:07Z",
+    "_id": "b90fdb1c-6dd9-430c-84c6-a171639226e3",
+    "_rev": "PtDtQjdJbHP45gYivUCQjA",
     "_type": "skills",
-    "_updatedAt": "2022-02-02T06:34:44Z",
+    "_updatedAt": "2022-02-03T08:49:15Z",
+    "bgColor": "#fcece7",
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "image-09532d7c1755c8a4086fc78d7edef8b71d398317-64x64-png",
+        "_ref": "image-150681c99b6a34ff849fdf59341c0e7af7b6dcd2-64x64-png",
         "_type": "reference"
       }
     },
-    "name": "Material UI"
+    "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/1200px-Solidity_logo.svg.png",
+    "name": "Solidity"
   },
-  {
-    "_createdAt": "2022-02-02T04:29:10Z",
-    "_id": "2d04e90d-e4eb-4fd3-a7ce-966ba0dc736c",
-    "_rev": "zSjPig9slpSJaiK1HTs6kW",
-    "_type": "skills",
-    "_updatedAt": "2022-02-03T08:51:22Z",
-    "bgColor": "#efe8fa",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-0057ef1feaa326d75b1070a7f31bcf1d79247b96-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Redux"
-  },
-  {
-    "_createdAt": "2022-02-02T04:27:38Z",
-    "_id": "4090b480-26cf-4928-a44c-1c5bfddf29b0",
-    "_rev": "EZ5kWSCITeRq5ErW0PAxoQ",
-    "_type": "skills",
-    "_updatedAt": "2022-02-02T09:22:21Z",
-    "bgColor": "#FFF4F2",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-cb15472a1bda9fdc8cca29ba1afee4d471405b55-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "HTML5"
-  },
-  {
-    "_createdAt": "2022-02-02T06:34:30Z",
-    "_id": "4be7587d-2ed2-4faf-a172-e96256dd813a",
-    "_rev": "aqM1z4uXkIQ2WQ9uDdL2EG",
-    "_type": "skills",
-    "_updatedAt": "2022-02-02T06:34:30Z",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-8ca4162dcb892390586d2828ef56f3423b7f75da-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Vue"
-  },
+ 
+ 
   {
     "_createdAt": "2022-02-02T06:33:39Z",
     "_id": "6af0de2b-156d-4058-a231-f2701e28323a",
@@ -91,37 +81,8 @@
     },
     "name": "Python"
   },
-  {
-    "_createdAt": "2022-02-02T06:31:33Z",
-    "_id": "7d1946ba-050b-4bbd-83c2-4c8f21909650",
-    "_rev": "LBE2b8ZL0PYeq1ZhGKJWvt",
-    "_type": "skills",
-    "_updatedAt": "2022-02-03T08:50:55Z",
-    "bgColor": "#f3dde4",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-52274c92e439b4002dfbcf73b704b6d61d8035b3-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Sass"
-  },
-  {
-    "_createdAt": "2022-02-02T06:33:17Z",
-    "_id": "7fd4a492-6fde-42be-bc0b-d4a70ccd8444",
-    "_rev": "EZ5kWSCITeRq5ErW0NPKjG",
-    "_type": "skills",
-    "_updatedAt": "2022-02-02T06:33:17Z",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-64f3e20f8ad906d56dea96863b6db87fad6efb52-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Typescript"
-  },
+ 
+
   {
     "_createdAt": "2022-02-02T06:31:15Z",
     "_id": "a3281d41-d462-4f71-9cf6-6e5b34352790",
@@ -152,24 +113,9 @@
         "_type": "reference"
       }
     },
-    "name": "React JS"
+    "name": "React"
   },
-  {
-    "_createdAt": "2022-02-02T04:27:53Z",
-    "_id": "b2ed73a6-2cb7-42d1-bd12-5390fd44f70c",
-    "_rev": "MPbpsQdoxvSweYYnp9EeYJ",
-    "_type": "skills",
-    "_updatedAt": "2022-02-02T09:24:01Z",
-    "bgColor": "#dde8ee",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-913fa22634494a795e3baf0d6f9872b1e71c60a5-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "CSS3"
-  },
+
   {
     "_createdAt": "2022-02-02T06:32:07Z",
     "_id": "b90fdb1c-6dd9-430c-84c6-a171639226e3",
@@ -184,54 +130,11 @@
         "_type": "reference"
       }
     },
-    "name": "Figma"
-  },
-  {
-    "_createdAt": "2022-02-02T06:33:56Z",
-    "_id": "cae71fce-3675-490b-b5ff-7535af178d1d",
-    "_rev": "sQyQDhDVkSCNXVbv5hv2Dc",
-    "_type": "skills",
-    "_updatedAt": "2022-02-03T08:50:20Z",
-    "bgColor": "#ecfcff",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-2f4b4d991bdb73ec92030960bf1b0a3558862879-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Graphql"
-  },
-  {
-    "_createdAt": "2022-02-02T04:28:17Z",
-    "_id": "d055aee7-e445-45ef-ac85-48f892f20d60",
-    "_rev": "70QCIWOUZWUZKPvyOkc0Up",
-    "_type": "skills",
-    "_updatedAt": "2022-02-03T08:51:47Z",
-    "bgColor": "#fdf7d1",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-26134185e080964e920ef22737c98f0b4660901f-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Javascript"
-  },
-  {
-    "_createdAt": "2022-02-02T06:32:38Z",
-    "_id": "db661f45-7f77-4d76-84df-d6cff0aede06",
-    "_rev": "zSjPig9slpSJaiK1HTraqD",
-    "_type": "skills",
-    "_updatedAt": "2022-02-03T08:49:41Z",
-    "bgColor": "#fce8e3",
-    "icon": {
-      "_type": "image",
-      "asset": {
-        "_ref": "image-14ff900e852ac9537cffe7e54bd1eea5eefb98b3-64x64-png",
-        "_type": "reference"
-      }
-    },
-    "name": "Git"
+    "image":"https://ui-lib.com/blog/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png",
+    "name": "Next Js"
   }
+ 
+ 
+
+
 ]

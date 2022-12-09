@@ -4,22 +4,24 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
+import aboutJson from "../../json_files/about.json";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]';
+    setAbouts(aboutJson);
+    // const query = '*[_type == "abouts"]';
 
-    client.fetch(query).then((data) => {
-      setAbouts(data);
+    // client.fetch(query).then((data) => {
+    //   setAbouts(data);
       
-    });
+    // });
   }, []);
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text">What We <span>Deliver</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (

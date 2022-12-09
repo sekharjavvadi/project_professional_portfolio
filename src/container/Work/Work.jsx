@@ -20,7 +20,7 @@ const Work = () => {
     setWorks(workJson);
     console.log(workJson);
 
-    //   setFilterWork(data);
+      setFilterWork(workJson);
 
     // client.fetch(query).then((data) => {
     //   setWorks(data);
