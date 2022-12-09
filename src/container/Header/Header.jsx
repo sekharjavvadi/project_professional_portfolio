@@ -1,72 +1,46 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
-import './Header.scss';
-
+import { AppWrap } from "../../wrapper";
+import { images } from "../../constants";
+import "./Header.scss";
+import Lottie from "react-lottie";
+import * as workInProgress from "../../json_files/work_slide_lottie.json";
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
 };
 
 const Header = () => (
-  <div className="app__header app__flex h-[100vh]">
-    <motion.div
-      whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-      transition={{ duration: 0.5 }}
-      className="app__header-info"
-    >
-      <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
-          <span>🚀</span>
-         
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Destination to your</p>
-            <h1 className="head-text">dream project</h1>
-            {/* <p className="p-text"> is here!!!</p> */}
-          </div>
-        </div>
+  <div className="app__header app__flex h-[100vh] relative">
+    <div className="flex md:flex-row flex-col w-full h-full justify-center md:justify-around items-center m-auto">
+    <h2 className="head-text">
+      We Help Startups <br />
+      Launch 🚀  Their <span>Product</span> In the <br />
+      New Era Of the <span><u>Internet</u></span>
+    </h2>
 
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
-        </div>
-      </div>
-    </motion.div>
-
-    <motion.div
-      whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="app__header-img"
-    >
-      <img src={images.profile} alt="profile_bg" />
-      <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
-        src={images.circle}
-        alt="profile_circle"
-        className="overlay_circle"
+    <div className="md:w-[600px] md:h-[600px] h-[90%]">
+      <Lottie
+        options={{
+          loop: true,
+          autoplay: true,
+          animationData: workInProgress,
+          rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+          },
+        }}
+        // height={500}
+        // width={500}
       />
-    </motion.div>
-
-    <motion.div
-      variants={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
-    >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
-          <img src={circle} alt="profile_bg" />
-        </div>
-      ))}
-    </motion.div>
+    </div>
+    </div>
   </div>
 );
 

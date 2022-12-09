@@ -13,6 +13,7 @@
         "_type": "reference"
       }
     },
+    "image": "https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fuiux.png?alt=media&token=a4f27050-4042-43dc-8db6-2a4f5c99a5e1",
     "title": "UI/UX Design"
   },
   {
@@ -29,6 +30,7 @@
         "_type": "reference"
       }
     },
+    "image":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fweb3_dev.png?alt=media&token=5e4f621e-21f9-4a78-9686-7ffbfadc62c6",
     "title": "Blockchain Services"
   },
   {
@@ -62,7 +64,8 @@
         "_type": "reference"
       }
     },
-    "title": "Web & Desktop Apps"
+    "title": "Web & Desktop Apps",
+    "image":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fapp_dev.jpeg?alt=media&token=97104847-4d3a-48e6-820d-d6b15e43767a"
   }
  
 ]
