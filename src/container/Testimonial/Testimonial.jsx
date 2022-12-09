@@ -38,7 +38,7 @@ const Testimonial = () => {
 
   return (
     <>
-    <h2 className="head-text">What <span>Client</span> say's about us</h2>
+    <h2 className="head-text">What <span>Clients</span> tell about us</h2>
       {testimonials.length && (
         <>
         <div className='flex flex-col w-full justify-center items-center pt-[20px]'>

@@ -60,7 +60,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["Web 3", "Web 2", "All"].map(
+        {["All","Web 3", "Web 2"].map(
           (item, index) => (
             <div
               key={index}
@@ -120,7 +120,7 @@ const Work = () => {
 
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>
+              <p className="p-text text-ellipsis" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
 
