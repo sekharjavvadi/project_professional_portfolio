@@ -11,7 +11,7 @@ import teamJson from "../../json_files/team.json";
 
 function Team() {
   const photoCard = (
-    <div className="w-[90%] md:w-[40%] relative h-[80%] mt-[15px] md:m-0">
+    <div className="w-[90%] md:w-[40%] md:h-[80%] relative h-[300px] mt-[15px] md:m-0">
       <div className="h-[35%] w-[50%] rounded-[10px] absolute top-0 left-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md">
         <img
           src={teamJson.hemanth}

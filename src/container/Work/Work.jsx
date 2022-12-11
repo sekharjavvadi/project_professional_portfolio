@@ -20,7 +20,9 @@ const Work = () => {
     setWorks(workJson);
     console.log(workJson);
 
-      setFilterWork(workJson);
+    // in setfilterwork show only 4 items at a time
+
+    setFilterWork(workJson.slice(0, 4));
 
     // client.fetch(query).then((data) => {
     //   setWorks(data);
@@ -46,12 +48,11 @@ const Work = () => {
   };
   const navigateToProject = (index) => {
     const project = works[index];
-    if(project.completed){
-     return window.open(project.projectLink, "_blank");
-      
+    if (project.completed) {
+      return window.open(project.projectLink, "_blank");
     }
     alert("Project is under development");
-  }
+  };
 
   return (
     <>
@@ -59,21 +60,7 @@ const Work = () => {
         Our Creative <span>Portfolio</span> Section
       </h2>
 
-      <div className="app__work-filter">
-        {["All","Web 3", "Web 2"].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
-      </div>
+      {filterSection({ arrayy: ["All", "Web 3", "Web 2"] })}
 
       <motion.div
         animate={animateCard}
@@ -94,17 +81,16 @@ const Work = () => {
                 }}
                 className="app__work-hover app__flex"
               >
-               
-                  <motion.div
+                <motion.div
                   onClick={() => navigateToProject(index)}
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    <AiFillEye />
-                  </motion.div>
-                
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 0.9] }}
+                  transition={{ duration: 0.25 }}
+                  className="app__flex"
+                >
+                  <AiFillEye />
+                </motion.div>
+
                 {/* <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -131,8 +117,39 @@ const Work = () => {
           </div>
         ))}
       </motion.div>
+      {works.length !== filterWork.length && activeFilter === "All"
+        ? filterSection({
+            arrayy: ["Show More"],
+            onClick: () => {
+              handleWorkFilter("All");
+            },
+          })
+        : null}
     </>
   );
+
+  function filterSection({ onClick, arrayy }) {
+    return (
+      <div className="app__work-filter">
+        {arrayy?.map((item, index) => (
+          <div
+            key={index}
+            onClick={() => {
+              if (onClick != null) {
+                return onClick(item);
+              }
+              handleWorkFilter(item);
+            }}
+            className={`app__work-filter-item app__flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    );
+  }
 };
 
 export default AppWrap(

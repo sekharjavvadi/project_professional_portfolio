@@ -12,6 +12,9 @@
   flex-wrap: wrap;
 
   margin: 4rem 0 2rem;
+  @media screen and (max-width: 400px) {
+    margin: 2rem 0 1rem;
+  }
 
   .app__work-filter-item {
     padding: 0.5rem 1rem;
@@ -33,6 +36,7 @@
       padding: 1rem 2rem;
       border-radius: 0.85rem;
     }
+   
   }
 
   .item-active {
@@ -69,11 +73,13 @@
       width: 470px;
       padding: 1.25rem;
       border-radius: 0.75rem;
+      
     }
 
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 400px) {
+
       width: 100%;
-      margin: 1rem;
+      margin: 1rem !important;
     }
   }
 }
