@@ -26,6 +26,16 @@
     border-radius: 15px;
     object-fit: cover;
   }
+  .placeholder{
+    //
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    // create  a placeholder loading css  here
+    background-color: rgb(201, 201, 18);
+
+
+  }
 
   @media screen and (min-width: 2000px) {
     width: 370px;
