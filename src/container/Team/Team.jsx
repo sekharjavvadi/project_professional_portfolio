@@ -6,42 +6,106 @@ import {
   AiOutlineApi,
   AiOutlineBulb,
   AiOutlineLaptop,
+  AiOutlineLinkedin,
 } from "react-icons/ai";
 import teamJson from "../../json_files/team.json";
-
+import { BsLinkedin } from "react-icons/bs";
+import { motion } from 'framer-motion';
 function Team() {
+  const linkedinIcon = (linkedinUrl) => {
+    const navigateToLinkedin = () => {
+     
+      window.open(linkedinUrl, "_blank");
+
+    }
+    return (
+     
+      <BsLinkedin  className=" cursor-pointer fade-in-animation" color="#0077B5" onClick={navigateToLinkedin}/>
+   
+      
+      
+
+    )
+  }
   const photoCard = (
-    <div className="w-[90%] md:w-[40%] md:h-[80%] relative h-[300px] mt-[15px] md:m-0">
-      <div className="h-[35%] w-[50%] rounded-[10px] absolute top-0 left-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md">
+    <div className="w-[90%] md:w-[40%] md:h-[80%] relative h-[300px] mt-[15px] md:m-0 ">
+      <div className="h-[35%] w-[50%] rounded-[10px] absolute top-0 left-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md"
+      
+      onMouseOver={() => {
+        document.getElementById("hemanth-linkedin").style.display = "block";
+
+      }}
+      onMouseOut={() => {
+        document.getElementById("hemanth-linkedin").style.display = "none";
+      }}>
         <img
           src={teamJson.hemanth}
           alt="Hemanth"
           className="h-full w-full object-cover rounded-[15px] p-[8px]"
         />
+          <div className="fixed bottom-5 right-5 hidden" id="hemanth-linkedin">
+          {linkedinIcon("https://www.linkedin.com/in/hemanth-kumar-veeranala-967ba318a")}
+        </div>
       </div>
-      <div className="h-[62%] w-[50%] rounded-[10px] absolute bottom-0 left-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md">
+      <div className="h-[62%] w-[50%] rounded-[10px] absolute bottom-0 left-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md"
+      onMouseOver={() => {
+        document.getElementById("sekhar-linkedin").style.display = "block";
+
+      }}
+      onMouseOut={() => {
+        document.getElementById("sekhar-linkedin").style.display = "none";
+      }}
+      >
         <img
           src={teamJson.sekhar}
-          alt="Hemanth"
+          alt="sekhar"
           className="h-full w-full object-cover rounded-[15px] p-[8px]"
         />
+        <div className="fixed bottom-5 right-5 hidden" id="sekhar-linkedin">
+          {linkedinIcon("https://www.linkedin.com/in/sekhar-javvadi-987380158")}
+        </div>
       </div>
-      <div className="h-[62%] w-[48%] rounded-[10px] absolute top-0 right-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md">
+      <div className="h-[62%] w-[48%] rounded-[10px] absolute top-0 right-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md"
+           onMouseOver={() => {
+            document.getElementById("satish-linkedin").style.display = "block";
+    
+          }}
+          onMouseOut={() => {
+            document.getElementById("satish-linkedin").style.display = "none";
+          }}>
         <img
           src={teamJson.satish}
-          alt="Hemanth"
+          alt="Satish"
           className="h-full w-full object-cover rounded-[15px] p-[8px]"
         />
+          <div className="fixed bottom-5 right-5 hidden" id="satish-linkedin">
+          {linkedinIcon("https://www.linkedin.com/in/saride-satish-kumar-59a26a187")}
+        </div>
       </div>
-      <div className="h-[35%] w-[48%] rounded-[10px] absolute bottom-0 right-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md">
+      <div className="h-[35%] w-[48%] rounded-[10px] absolute bottom-0 right-0 bg-slate-200 drop-shadow-sm hover:drop-shadow-md"
+           onMouseOver={() => {
+            document.getElementById("naveen-linkedin").style.display = "block";
+    
+          }}
+          onMouseOut={() => {
+            document.getElementById("naveen-linkedin").style.display = "none";
+          }}
+      >
         <img
           src={teamJson.naveen}
           alt="Hemanth"
           className="h-full w-full object-cover rounded-[15px] p-[8px]"
         />
+          <div className="fixed bottom-5 right-5 hidden" id="naveen-linkedin">
+          {linkedinIcon("https://www.linkedin.com/in/naveen-kumar-atava-318ba318a")}
+        </div>
       </div>
     </div>
   );
+
+
+
+
   return (
     <div className="w-[90%] h-full flex flex-col items-center justify-between md:flex-row">
       <div className="flex flex-col md:w-[50%] w-full items-start">
@@ -90,6 +154,6 @@ function Team() {
 
 export default AppWrap(
   MotionWrap(Team, "app__skills"),
-  "skills",
+  "team",
   "app__primarybg"
 );

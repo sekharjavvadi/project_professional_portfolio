@@ -18,7 +18,7 @@ const scaleVariants = {
 };
 
 const Header = () => (
-  <div className="app__header app__flex h-[100vh] relative">
+  <div className="app__header app__flex h-[100vh] relative" id="home">
     <div className="flex md:flex-row flex-col w-full h-full justify-center md:justify-around items-center m-auto">
     <h2 className="head-text">
       We Help Startups <br />
