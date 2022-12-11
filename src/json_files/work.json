@@ -38,9 +38,10 @@
     },
     "image": "https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fcypherb.png?alt=media&token=347b6e92-4f8e-4bd6-b7d4-beea6ec17706",
     "image2": "",
-    "projectLink": "https://google.com",
+    "projectLink": "https://www.cypherb.com",
     "tags": ["Web 3"],
-    "title": "Cypher-B"
+    "title": "Cypher-B",
+    "completed": true
   },
   {
     "_createdAt": "2022-02-01T04:51:08Z",
