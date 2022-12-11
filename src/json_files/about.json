@@ -14,7 +14,8 @@
       }
     },
     "title": "UI/UX Design",
-    "image":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fapp_dev.jpeg?alt=media&token=97104847-4d3a-48e6-820d-d6b15e43767a"
+    "image":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fapp_dev.jpeg?alt=media&token=97104847-4d3a-48e6-820d-d6b15e43767a",
+    "compressedImage":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fapp_dev.jpeg?alt=media&token=97104847-4d3a-48e6-820d-d6b15e43767a"
 
   },
   {
@@ -32,6 +33,8 @@
       }
     },
     "image":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fweb3_dev.png?alt=media&token=5e4f621e-21f9-4a78-9686-7ffbfadc62c6",
+    "compressedImage":"https://firebasestorage.googleapis.com/v0/b/spotmies-dev.appspot.com/o/website-assets%2Fweb3_dev.png?alt=media&token=5e4f621e-21f9-4a78-9686-7ffbfadc62c6",
+
     "title": "Blockchain Services"
   },
   {
