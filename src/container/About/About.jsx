@@ -38,7 +38,7 @@ const About = () => {
              
               <img src={about?.image}  />
             </Suspense>
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
+            <h2 className="bold-text w-full md:mt-[20px] mt-[10px]">
               {about?.title}
             </h2>
             <p className="p-text" style={{ marginTop: 10 }}>
